@@ -122,6 +122,7 @@ pub fn main() -> Result<(), winit::error::EventLoopError> {
                 surface.configure(
                     &device,
                     &wgpu::SurfaceConfiguration {
+                        color_space: wgpu::SurfaceColorSpace::Auto,
                         usage: wgpu::TextureUsages::RENDER_ATTACHMENT,
                         format,
                         width: physical_size.width,
@@ -220,6 +221,7 @@ pub fn main() -> Result<(), winit::error::EventLoopError> {
                         surface.configure(
                             device,
                             &wgpu::SurfaceConfiguration {
+                                color_space: wgpu::SurfaceColorSpace::Auto,
                                 format: *format,
                                 usage: wgpu::TextureUsages::RENDER_ATTACHMENT,
                                 width: size.width,
@@ -304,7 +306,7 @@ pub fn main() -> Result<(), winit::error::EventLoopError> {
                             renderer.present(None, frame.texture.format(), &view, viewport);
 
                             // Present the frame
-                            frame.present();
+                            queue.present(frame);
                         }
                         _ => {
                             // Try rendering again next frame.

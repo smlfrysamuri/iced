@@ -272,6 +272,7 @@ impl Renderer {
         let mapped_buffer = slice.get_mapped_range();
 
         mapped_buffer
+            .expect("Invalid mapped buffer.")
             .chunks(dimensions.padded_bytes_per_row)
             .fold(vec![], |mut acc, row| {
                 acc.extend(&row[..dimensions.unpadded_bytes_per_row]);
@@ -913,6 +914,7 @@ impl renderer::Headless for Renderer {
 
         let adapter = instance
             .request_adapter(&wgpu::RequestAdapterOptions {
+                apply_limit_buckets: false,
                 power_preference: wgpu::PowerPreference::HighPerformance,
                 force_fallback_adapter: false,
                 compatible_surface: None,
