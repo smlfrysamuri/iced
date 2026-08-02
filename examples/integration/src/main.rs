@@ -275,7 +275,7 @@ pub fn main() -> Result<(), winit::error::EventLoopError> {
                                 )],
                                 *cursor,
                                 renderer,
-                                &mut Vec::new(),
+                                &mut shell::Bus::new(),
                             );
 
                             // Update the mouse cursor
@@ -349,7 +349,7 @@ pub fn main() -> Result<(), winit::error::EventLoopError> {
                     renderer,
                 );
 
-                let mut messages = Vec::new();
+                let mut messages = shell::Bus::new();
 
                 let _ = interface.update(window, &waker, events, *cursor, renderer, &mut messages);
 
