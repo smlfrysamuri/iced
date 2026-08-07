@@ -20,7 +20,7 @@ workspace = true
 # ---------------------------------- #
 default = [
     "advanced",
-    "iced_renderer/fira-sans",
+    "fira_sans",
     "only_wgpu",
     "only_winit",
     "smol",
@@ -29,6 +29,7 @@ default = [
     "wgpu-bare"
 ]
 advanced = ["iced_core/advanced", "iced_widget/advanced"]
+fira_sans = ["iced_renderer/fira-sans"]
 only_wgpu = ["iced_wgpu"]
 only_winit = ["iced_winit"]
 smol = ["iced_futures/smol"]
@@ -68,7 +69,9 @@ wayland = ["iced_renderer/wayland", "iced_winit/wayland"]
 
 [dependencies]
 iced_debug.workspace = true
+
 iced_core.workspace = true
+
 iced_futures.workspace = true
 iced_renderer.workspace = true
 iced_runtime.workspace = true
