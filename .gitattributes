@@ -1,1 +1,13 @@
-X:/Escamote/.gitattributes
+# Binary payloads. `core.autocrlf` is true in this repo, and without an explicit
+# marking git decides text-vs-binary by sniffing the first 8000 bytes for a NUL. Every
+# file below is framed with a JSON or text header ahead of its compressed payload, so
+# that heuristic can flip to "text" as the header grows and then rewrite LF -> CRLF
+# through the payload on checkout. `binary` is -diff -merge -text.
+
+*.world         binary
+*.world-delta   binary
+*.fpak          binary
+*.glb           binary
+*.jpg           binary
+*.jpeg          binary
+*.png           binary
