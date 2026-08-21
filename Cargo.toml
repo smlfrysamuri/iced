@@ -153,11 +153,7 @@ bitflags        = { version = "=2.13.1" }
 bytemuck        = { version = "=1.25.2", features = ["derive"] }
 cryoglyph       = { path = "../cryoglyph" }
 glam            = { version = "=0.33.5" }
-<<<<<<< Updated upstream
 image           = { version = "=0.25.10", default-features = false, features = ["rayon", "png", "serde", "jpeg"] }
-=======
-image           = { version = "0.25.10", default-features = false, features = ["rayon", "png", "serde", "jpeg"] }
->>>>>>> Stashed changes
 log             = { version = "=0.4.33" }
 serde           = { version = "=1.0.229" }
 smol            = { version = "=2.0.2" }
