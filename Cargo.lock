@@ -1033,12 +1033,11 @@ checksum = "0b5343afd4a8365a643ac588dab4cf234a190c7f6c88c9f6dd6ffe00837661b7"
 
 [[package]]
 name = "etagere"
-version = "0.2.15"
+version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fc89bf99e5dc15954a60f707c1e09d7540e5cd9af85fa75caa0b510bc08c5342"
+checksum = "7ecb5c40d5683a270e077688f53a99eac51c1cb1ae5ba63b55590370cb3536bf"
 dependencies = [
  "euclid",
- "svg_fmt",
 ]
 
 [[package]]
@@ -1557,7 +1556,7 @@ checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
 
 [[package]]
 name = "iced"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "iced_core",
  "iced_debug",
@@ -1576,7 +1575,7 @@ dependencies = [
 
 [[package]]
 name = "iced_beacon"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "bincode 1.3.3",
  "futures",
@@ -1590,7 +1589,7 @@ dependencies = [
 
 [[package]]
 name = "iced_core"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "bitflags 2.13.1",
  "bytes",
@@ -1608,7 +1607,7 @@ dependencies = [
 
 [[package]]
 name = "iced_debug"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "cargo-hot-protocol",
  "iced_beacon",
@@ -1619,7 +1618,7 @@ dependencies = [
 
 [[package]]
 name = "iced_devtools"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "iced_debug",
  "iced_program",
@@ -1629,7 +1628,7 @@ dependencies = [
 
 [[package]]
 name = "iced_futures"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "futures",
  "iced_core",
@@ -1643,7 +1642,7 @@ dependencies = [
 
 [[package]]
 name = "iced_graphics"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "bitflags 2.13.1",
  "bytemuck",
@@ -1663,7 +1662,7 @@ dependencies = [
 
 [[package]]
 name = "iced_highlighter"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "iced_core",
  "two-face",
@@ -1671,7 +1670,7 @@ dependencies = [
 
 [[package]]
 name = "iced_program"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "iced_graphics",
  "iced_runtime",
@@ -1679,7 +1678,7 @@ dependencies = [
 
 [[package]]
 name = "iced_renderer"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "iced_graphics",
  "iced_tiny_skia",
@@ -1690,7 +1689,7 @@ dependencies = [
 
 [[package]]
 name = "iced_runtime"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "bytes",
  "iced_core",
@@ -1702,14 +1701,14 @@ dependencies = [
 
 [[package]]
 name = "iced_selector"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "iced_core",
 ]
 
 [[package]]
 name = "iced_test"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "iced_futures",
  "iced_program",
@@ -1724,7 +1723,7 @@ dependencies = [
 
 [[package]]
 name = "iced_tester"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "iced_test",
  "iced_widget",
@@ -1734,7 +1733,7 @@ dependencies = [
 
 [[package]]
 name = "iced_tiny_skia"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "bytemuck",
  "cosmic-text",
@@ -1750,7 +1749,7 @@ dependencies = [
 
 [[package]]
 name = "iced_wgpu"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "bitflags 2.13.1",
  "bytemuck",
@@ -1769,7 +1768,7 @@ dependencies = [
 
 [[package]]
 name = "iced_widget"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "iced_highlighter",
  "iced_renderer",
@@ -1786,7 +1785,7 @@ dependencies = [
 
 [[package]]
 name = "iced_winit"
-version = "0.15.0-dev-escamote-custom"
+version = "0.15.0-dev-escamote-custom-escamote-custom"
 dependencies = [
  "arboard",
  "iced_debug",
@@ -2222,9 +2221,9 @@ dependencies = [
 
 [[package]]
 name = "log"
-version = "0.4.33"
+version = "0.4.34"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0ceec5bc11778974d1bcb055b18002eba7f4b3518b6a0081b3af5f21666da9ad"
+checksum = "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6"
 
 [[package]]
 name = "loop9"
@@ -2237,9 +2236,9 @@ dependencies = [
 
 [[package]]
 name = "lru"
-version = "0.16.4"
+version = "0.18.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7f66e8d5d03f609abc3a39e6f08e4164ebf1447a732906d39eb9b99b7919ef39"
+checksum = "5d2f2f9b4ba7e6b24d95e7e899329d35be83bcded72c8540cdd5368932d1d90a"
 
 [[package]]
 name = "lyon"
