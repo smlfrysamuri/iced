@@ -154,7 +154,7 @@ bytemuck        = { version = "=1.25.2", features = ["derive"] }
 cryoglyph       = { path = "../cryoglyph" }
 glam            = { version = "=0.33.5" }
 image           = { version = "=0.25.10", default-features = false, features = ["rayon", "png", "serde", "jpeg"] }
-log             = { version = "=0.4.33" }
+log             = { version = "=0.4.34" }
 serde           = { version = "=1.0.229" }
 smol            = { version = "=2.0.2" }
 thiserror       = { version = "=2.0.20" }
