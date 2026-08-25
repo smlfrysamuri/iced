@@ -467,7 +467,6 @@ impl BufferStack {
                     },
                 ))
             }
-            RoutineDispatch::Empty(_) => unreachable!(),
         }
     }
 
@@ -490,7 +489,6 @@ impl BufferStack {
                     },
                 ))
             }
-            RoutineDispatch::Empty(_) => unreachable!(),
         }
     }
 

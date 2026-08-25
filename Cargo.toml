@@ -215,11 +215,11 @@ tracing = "0.1"
 two-face = { version = "0.4", default-features = false, features = ["syntect-default-fancy"] }
 unicode-segmentation = "1.0"
 url = "2.5"
-wasm-bindgen-futures = "0.4"
-wasmtimer = "0.4.2"
-web-sys = "=0.3.85"
+wasm-bindgen-futures = "0.4.77"
+wasmtimer = "0.4.3"
+web-sys = "=0.3.104"
 web-time = "1.1"
-wgpu = { version = "30.0.0", default-features = false, features = ["std", "dx12", "wgsl"] }
+wgpu = { version = "=30.0.1", default-features = false, features = ["std", "dx12", "wgsl"] }
 winit = { git = "https://github.com/iced-rs/winit.git", rev = "05b8ff17a06562f0a10bb46e6eaacbe2a95cb5ed", default-features = false, features = ["rwh_06"] }
 
 [workspace.lints.rust]
