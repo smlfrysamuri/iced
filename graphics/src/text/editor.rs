@@ -756,6 +756,12 @@ impl editor::Editor for Editor {
             }
 
             internal.editor.shape_as_needed(font_system.raw(), false);
+
+            // A resize drops every line's layout and only re-lays the visible ones, but
+            // `selection` needs the cursor's line even when it has scrolled out of view.
+            let cursor_line = internal.editor.cursor().line;
+            let _ = buffer_mut_from_editor(&mut internal.editor)
+                .line_layout(font_system.raw(), cursor_line);
         });
     }
 
